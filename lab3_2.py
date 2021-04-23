@@ -1,8 +1,7 @@
-def fn(a, d, n):
+def arithmetic_progression(a, d, n):
     if n == 1:
         return a
-    return fn(a+d, d, n-1)
-
+    return arithmetic_progression(a+d, d, n-1)
 
 try:
     start_num = int(input("Write first element of the progression: "))
@@ -12,4 +11,4 @@ except ValueError:
     print("Your write wrong number!")
     quit()
 
-print("Result:", fn(start_num, dif_progress, find_num))
+print("Result:", arithmetic_progression(start_num, dif_progress, find_num))

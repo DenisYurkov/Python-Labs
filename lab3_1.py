@@ -15,7 +15,6 @@ def draw_frame_of_symbols(width, height, symbol):
         print(symbol*width)
 
 
-
 try:
     width = int(input("Width: "))
     height = int(input("Height: "))
